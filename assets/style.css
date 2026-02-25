@@ -5,3 +5,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+#main {
+    background-image: url(./img/cork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
