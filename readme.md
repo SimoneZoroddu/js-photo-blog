@@ -23,8 +23,8 @@
 > 
 > **Font utilizzati:**
 > 
-> titoli:  ‘Edu Tas Beginner’, sans-serif;d
-> ate: ‘Sometype Mono’, ‘monospace’;
+> titoli:  ‘Edu Tas Beginner’, sans-serif;
+> date: ‘Sometype Mono’, ‘monospace’;
 > (Dovreste sapere a questo punto cosa e come prendere da Google Fonts… 😉)
 > 
 > **Bonus**
