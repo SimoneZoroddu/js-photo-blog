@@ -12,3 +12,18 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.fonts_edu {
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+.fonts_Sometype_Mono {
+    font-family: "Sometype Mono", monospace;
+}
+
+.pin {
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
