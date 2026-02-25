@@ -16,10 +16,10 @@ fetch(endpoint)
             <div class="col">
                 <div class="card p-2">
                     <img src="./assets/img/pin.svg" alt="" class="pin">
-                    <img src="${url}" class="card-img-top img-fluid" alt="">
+                    <img src="${url}" class="card-img-top img-fluid p-2 pb-0 pt-3" alt="">
                     <div class="card-body">
-                        <h2 class="fonts_edu">${title}</h2>
-                        <p class="card-text fonts_Sometype_Mono">${date}</p>
+                    <p class="card-text mb-0 fonts_Sometype_Mono">${date}</p>
+                        <h2 class="fonts_edu fw-bold">${title}</h2>
                     </div>
                 </div>
             </div>
