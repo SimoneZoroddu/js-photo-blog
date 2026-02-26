@@ -27,3 +27,5 @@ fetch(endpoint)
             rowEl.insertAdjacentHTML('beforeend', markup)
         })
     })
+
+
