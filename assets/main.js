@@ -2,12 +2,20 @@ const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 const rowEl = document.querySelector('.row')
 console.log(rowEl);
 
+const overlayOffEl = document.querySelector('#overlayOff')
+//console.log(overlayOffEl, overlayOnEl);
+const overlayEl = document.querySelector('#overlay')
+const imagCardEl = document.querySelector('#imagCard')
+overlayOffEl.addEventListener('click', function(){
+    overlayEl.style.display = "none"
+})
 
 
 fetch(endpoint)
 .then(res => res.json())
 .then(datas => {
-    console.log(datas);
+    // console.log(datas);
+    
     datas.forEach(data => {
         // console.log(data.url);
         const { title, date, url } = data
@@ -25,37 +33,16 @@ fetch(endpoint)
         </div>
         `
         rowEl.insertAdjacentHTML('beforeend', markup)
+
+        const cardImgsTopEl = document.querySelectorAll('.card-img-top')
+        console.log(cardImgsTopEl);
+    
+        for (let i = 0; i < cardImgsTopEl.length; i++) {
+            const cardimg = cardImgsTopEl[i];
+            cardimg.addEventListener('click', function(){
+             overlayEl.style.display = "block"
+             imagCardEl.src = cardimg.src
+            })
+        } 
     })
-    console.log(rowEl);
-    
-    const cardImgEl = document.getElementsByClassName('card-img-top')
-    //console.log(cardImgEl);
-    for (let i = 0; i < cardImgEl.length; i++) {
-        const element = cardImgEl[i];
-        //console.log(element);
-        element.addEventListener('click', function(){
-            overlayEl.style.display = "block"
-        })
-    }
-    
 })
-
-
-
-
-
-
-const overlayOnEl = document.querySelector('#overlayOn')
-const overlayOffEl = document.querySelector('#overlayOff')
-console.log(overlayOffEl, overlayOnEl);
-const overlayEl = document.querySelector('#overlay')
-
-
-overlayOnEl.addEventListener('click', function(){
-    overlayEl.style.display = "block"
-})
-overlayOffEl.addEventListener('click', function(){
-    overlayEl.style.display = "none"
-})
-
-
